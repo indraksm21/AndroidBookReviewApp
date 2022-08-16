@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="25dp"
+            android:text="Daftar Buku"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:drawableLeft="@drawable/ic_search"
+        android:background="#00FFFFFF"
+        android:id="@+id/btnCari"
+        android:height="45dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Cari Judul Buku"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:background="#DFDFDF"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/tambahBuku"
+        android:layout_gravity="right"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:src="@drawable/ic_edit"
+        android:backgroundTint="#2196F3"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/logout"
+        android:layout_gravity="left"
+        android:layout_marginTop="-55dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:src="@drawable/ic_login"
+        android:backgroundTint="#2196F3"/>
+
+
+</LinearLayout>
